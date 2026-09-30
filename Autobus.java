@@ -12,6 +12,27 @@ public class Autobus
         setAnhanger(false);
     }
     
+    public Autobus ( String neuKennzeichen, int neuSitzplatze, boolean neuAnhanger)
+    {
+        setkennzeichen(neuKennzeichen);
+        setSitzplatze(neuSitzplatze);
+        setAnhanger(neuAnhanger);
+    }
+    
+    public Autobus(String neuKennzeichen, int neuSitzplatze)
+    { 
+       setkennzeichen(neuKennzeichen);
+       setSitzplatze(neuSitzplatze);
+       setAnhanger(false);  
+    }
+    
+    public Autobus( String neuKennzeichen)
+    {
+        setkennzeichen(neuKennzeichen);
+        setSitzplatze(29);
+        setAnhanger(false);
+    }
+    
     public String getKennzeichen()
     {
         return kennzeichen;
